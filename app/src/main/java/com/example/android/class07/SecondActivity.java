@@ -17,8 +17,12 @@ public class SecondActivity extends AppCompatActivity {
         displayText = (TextView) findViewById(R.id.displayText);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(Keys.STRING);
-        int num = intent.getIntExtra(Keys.NUM, 0);
+
+//        String message = intent.getStringExtra(Keys.STRING);
+//        int num = intent.getIntExtra(Keys.NUM, 0);
+
+        Person p = (Person) intent.getSerializableExtra(Keys.PERSON);
+        displayText.setText(p.getName() + " " + p.getAge());
     }
 
 }

@@ -7,4 +7,5 @@ package com.example.android.class07;
 public interface Keys {
     String STRING = "string";
     String NUM = "num";
+    String PERSON = "person";
 }
