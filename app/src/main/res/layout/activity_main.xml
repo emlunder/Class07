@@ -15,4 +15,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello Android!" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Activity"
+        android:onClick="launch_activity" />
+
 </RelativeLayout>
